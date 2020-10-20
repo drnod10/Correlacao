@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Coeficiente de Correlação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" /></head>
+<body>
+    <form id="correl" align="center">
+        <br>
+        <h2>Coeficiente de Correlação</h2>
+        X
+        <img src="block.png" height ="10px" width="90px">
+        Y
+        <img src="block.png" height ="10px" width="80px">
+        X*Y
+        <img src="block.png" height ="10px" width="80px">
+        X²
+        <img src="block.png" height ="10px" width="80px">
+        Y²
+        <br>
+        <input type="text" size="5" id="x">
+        <img src="block.png">
+        <input type="text" size="5" id="y">
+        <img src="block.png">
+        <input type="text" size="5" disabled="disabled" id="xy">
+        <img src="block.png">
+        <input type="text" size="5" disabled="disabled" id="x2">
+        <img src="block.png">
+        <input type="text" size="5" disabled="disabled" id="y2">
+        <br>
+        <br>
+        <button type="button" class="uk-button uk-button-secondary">Adicionar Linha</button>
+        <button type="button" class="uk-button uk-button-secondary">Remover Linha</button>
+        <button type="reset" class="uk-button uk-button-danger">Limpar</button>
+        <button type="submit" href="resultado.html" class="uk-button uk-button-primary" onclick="calcular();">Calcular</button>
+</form>
+</body>
+
+<script>
+    function calcular(){
+    var x = document.getElementById(x).value;
+    var y = document.getElementById(y).value;
+    var a = document.getElementById(xy).value = xy;
+    var xy = x*y;
+    var x2 = x*x;
+    var y2 = y*y;
+    }
+</script>
+
+</html>
